@@ -5,7 +5,13 @@
     margin-left: auto;
     margin-bottom: 5em;
 }
-
+.disclosure-top-box {
+    margin-top: 5em;
+    width: 80%;
+    margin-right: 5em;
+    margin-left: 5em;
+    margin-bottom: 5em;
+}
 .standout{
     color: black;
 }

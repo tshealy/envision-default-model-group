@@ -29,7 +29,14 @@
     </div>
 </head>
 <body>
-{#BELOW CHANGES BASED ON VERSION 0/1#}
+<div class="version-one disclosure-top-box">
+    <p>In order to encourage higher Envision scores, we modified your interface with the Envision rating system in two ways:</p>
+        <ol>
+            <li>We added the high-scoring example project (typically there is no example project on the standard interface).</li>
+            <li>We pre-set your point scores to the conserving level of achievement (typically their is no preset).</li>
+        </ol>
+</div>
+{#BELOW CHANGES BASED ON VERSION 0/1/2#}
 <div class = "version-one south-box">
     <h3 id="title">An example project: South LA Wetlands by Psomas Engineering</h3>
     <div>
@@ -37,7 +44,7 @@
         <p id="image-description">Here is an example project to help with your assessment. The South Los Angeles Wetland Park is a nature park and sustainable stormwater treatment wetland constructed on a former Brownfield site in Los Angeles, CA. Both the previous site and end result are similar to what is possible in Cordova, AL. Included below are examples to explain how the South LA team achieved a platinum rating.</p>
     </div>
 </div>
-{#ABOVE CHANGES BASED ON VERSION 0/1#}
+{#ABOVE CHANGES BASED ON VERSION 0/1/2#}
 <form id="happy-form" class="navbar-form navbar-center" method="POST" action="{% url 'engineer_detail' engineer.pk %}">
     {% csrf_token %}
     <div class = "headerbox">

@@ -21,8 +21,6 @@ class RatingAdmin(admin.ModelAdmin):
             'CR1_1_inc', 'CR1_1_loa', 'CR1_1_exp',
             'CR2_2_inc', 'CR2_2_loa', 'CR2_2_exp',]
 
-    # list_filter = ['engineer']
-
 
 admin.site.register(Engineer, EngineerAdmin)
 admin.site.register(Rating, RatingAdmin)
