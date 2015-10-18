@@ -9,8 +9,25 @@
     margin-top: 5em;
     width: 80%;
     margin-right: 5em;
-    margin-left: 5em;
+    margin-left: 9em;
     margin-bottom: 5em;
+    border: 1em solid red;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    /*box-shadow: 10px 10px 5px #888888;*/
+}
+.disclosure-bottom-box {
+    /*margin-top: 1em;*/
+    width: 80%;
+    margin-right: 5em;
+    margin-left: 9em;
+    /*margin-bottom: 1em;*/
+    border: 1em solid red;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    /*box-shadow: 10px 10px 5px #888888;*/
 }
 .standout{
     color: black;
@@ -193,7 +210,10 @@ img {
 
 .version-one{
     display: none;
-    /*margin-left: 5px;*/
+}
+
+.version-two{
+    display: none;
 }
 
 .hidden{

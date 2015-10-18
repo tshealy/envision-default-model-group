@@ -307,6 +307,9 @@ $(function() {
         $(".version-one").show();
     };
 
+    if (parseInt($(".data").html()) === 2){
+        $(".version-two").show();
+    };
 
     $("#id_total_time").hide();
 
