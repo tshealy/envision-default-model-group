@@ -114,6 +114,11 @@ $(function() {
     function selectedPoints(){
         // dropdown
         // h4 id  ----------------------- dropdown + :selected
+        if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
+            $("#id_QL1_2_loa").val('13').ready(function() {
+                $("#ql12-selected-points").text($("#id_QL1_2_loa :selected").val());
+            });
+        }
         $("#id_QL1_2_loa").change(function() {
             $("#ql12-selected-points").text($("#id_QL1_2_loa :selected").val());
         });
@@ -160,9 +165,18 @@ $(function() {
                $("#id_QL1_2_loa").val(0);
                writePossiblePoints( $("#ql12-selected-points"), 0 );
                writePossiblePoints( $("#ql12-possible-points"), 0 );
-           } else {
-               writePossiblePoints( $("#ql12-possible-points"), getLastValue($("#id_QL1_2_loa")) );
-               $("#ql12-selected-points").text($("#id_QL1_2_loa :selected").val());
+           }
+           else {
+               if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
+                   writePossiblePoints($("#ql12-possible-points"), getLastValue($("#id_QL1_2_loa")));
+                   $("#id_QL1_2_loa").val('13').ready(function () {
+                       $("#ql12-selected-points").text($("#id_QL1_2_loa :selected").val());
+                   })
+               }
+               else {
+                   writePossiblePoints( $("#ql13-possible-points"), getLastValue($("#id_QL1_3_loa")) );
+                   $("#ql13-selected-points").text($("#id_QL1_3_loa :selected").val());
+               };
            };
         });
          $("#id_QL1_3_inc").change(function(){
@@ -296,6 +310,12 @@ $(function() {
         $("#total-selected").text(total);
     };
 
+    $("select").ready(function(){
+        setTimeout(function(){
+            totalSelectedPoints();
+        }, 1);
+    });
+
     $("select").change(function(){
         setTimeout(function(){
             totalPossibelPoints();
@@ -303,12 +323,14 @@ $(function() {
         }, 1);
     });
 
-    if (parseInt($(".data").html()) === 1){
-        $(".version-one").show();
+    if (parseInt($(".data").html()) === 2){
+        $(".version-two-three").show();
+        $(".disclosure-top-box").show();
     };
 
-    if (parseInt($(".data").html()) === 2){
-        $(".version-two").show();
+    if (parseInt($(".data").html()) === 3){
+        $(".version-two-three").show();
+        $(".disclosure-bottom-box").show();
     };
 
     $("#id_total_time").hide();

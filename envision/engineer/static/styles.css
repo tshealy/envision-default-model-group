@@ -15,7 +15,7 @@
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 1em;
-    /*box-shadow: 10px 10px 5px #888888;*/
+    display: none;
 }
 .disclosure-bottom-box {
     /*margin-top: 1em;*/
@@ -27,7 +27,8 @@
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 1em;
-    /*box-shadow: 10px 10px 5px #888888;*/
+    display: none;
+
 }
 .standout{
     color: black;
@@ -208,11 +209,7 @@ img {
     border-radius: 3px;
 }
 
-.version-one{
-    display: none;
-}
-
-.version-two{
+.version-two-three{
     display: none;
 }
 
