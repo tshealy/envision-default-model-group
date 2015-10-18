@@ -36,7 +36,14 @@ $(function() {
         return errorCount === 0;
     };
 
+    //Default setting required count to 250
+    if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
+        $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+    };
+
+
     //character count for textarea
+
     $("textarea").keyup(function(){
         var text_and_span = $(this).siblings();
         var current_span = text_and_span.siblings('.current-count');
@@ -44,11 +51,8 @@ $(function() {
         return textCount
     });
 
-
-
     $("select").change(function(){
         var row = $(this).parent().siblings(".row");
-
         var text = $(this).children(':selected').text();
         if (text === "Include") {
             text = $(this).parent().siblings("h4").find("select").children(':selected').text()
@@ -171,6 +175,7 @@ $(function() {
                    writePossiblePoints($("#ql12-possible-points"), getLastValue($("#id_QL1_2_loa")));
                    $("#id_QL1_2_loa").val('13').ready(function () {
                        $("#ql12-selected-points").text($("#id_QL1_2_loa :selected").val());
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
                    })
                }
                else {
