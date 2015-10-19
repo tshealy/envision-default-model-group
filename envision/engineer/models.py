@@ -49,18 +49,6 @@ class Rating(models.Model):
     QL1_2_loa = models.IntegerField(choices=ql_loa_1_2, default=0)
     QL1_2_exp = models.TextField(max_length=1000, null=True, blank=True)
 
-    ql_loa_1_3 = (
-        (0, "No Added Value"),
-        (1, "Improved"),
-        (2, "Enhanced"),
-        (5, "Superior"),
-        (12, "Conserving"),
-        (15, "Restorative"),
-    )
-    QL1_3_inc = models.IntegerField(choices=include, default=0)
-    QL1_3_loa = models.IntegerField(choices=ql_loa_1_3, default=0)
-    QL1_3_exp = models.TextField(max_length=1000, null=True, blank=True)
-
     ql_loa_2_3 = (
         (0, "No Added Value"),
         (1, "Improved"),
@@ -72,6 +60,18 @@ class Rating(models.Model):
     QL2_3_inc = models.IntegerField(choices=include, default=0)
     QL2_3_loa = models.IntegerField(choices=ql_loa_2_3, default=0)
     QL2_3_exp = models.TextField(max_length=1000, null=True, blank=True)
+
+    ql_loa_2_5 = (
+        (0, "No Added Value"),
+        (1, "Improved"),
+        (3, "Enhanced"),
+        (6, "Superior"),
+        (12, "Conserving"),
+        (15, "Restorative"),
+    )
+    QL2_5_inc = models.IntegerField(choices=include, default=0)
+    QL2_5_loa = models.IntegerField(choices=ql_loa_2_5, default=0)
+    QL2_5_exp = models.TextField(max_length=1000, null=True, blank=True)
 
     ql_loa_3_2 = (
         (0, "No Added Value"),
@@ -109,28 +109,6 @@ class Rating(models.Model):
     NW1_2_inc = models.IntegerField(choices=include, default=0)
     NW1_2_loa = models.IntegerField(choices=nw_loa_1_2, default=0)
     NW1_2_exp = models.TextField(max_length=1000, null=True, blank=True)
-
-    nw_loa_1_5 = (
-        (0, "No Added Value"),
-        (2, "Improved"),
-        (5, "Enhanced"),
-        (8, "Superior"),
-        (14, "Conserving"),
-    )
-    NW1_5_inc = models.IntegerField(choices=include, default=0)
-    NW1_5_loa = models.IntegerField(choices=nw_loa_1_5, default=0)
-    NW1_5_exp = models.TextField(max_length=1000, null=True, blank=True)
-
-    nw_loa_2_1 = (
-        (0, "No Added Value"),
-        (4, "Enhanced"),
-        (9, "Superior"),
-        (17, "Conserving"),
-        (21, "Restorative"),
-    )
-    NW2_1_inc = models.IntegerField(choices=include, default=0)
-    NW2_1_loa = models.IntegerField(choices=nw_loa_2_1, default=0)
-    NW2_1_exp = models.TextField(max_length=1000, null=True, blank=True)
 
     nw_loa_2_3 = (
         (0, "No Added Value"),

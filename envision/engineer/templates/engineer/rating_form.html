@@ -83,36 +83,6 @@
             </div>
         </div>
     </div>
-{#STARTS QL1.3#}
-    <div class="container bigbox">
-        <div class="version-two-three">
-            <div class="row">
-                <div class="col-md-12 box-example-ql">
-                    <h4>Example: Psomas Engineering achieved <i><b>No Added Value - 0 points.</b></i></h4>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <h4 class="col-md-1 ql">QL1.3</h4>
-            <p class="col-md-4 textbox"><b>Develop Local Skills and Capabilities</b><br>Expand the knowledge, skills and capacity of the community workforce to improve their ability to grow and develop.<br>
-                <a href="{%  static "details/QL1.3/index.html" %}" target="_blank">detail/guidance</a>
-            </p>
-            <h4 class="col-md-2"> {{ rating_form.QL1_3_inc }}</h4>
-            <h4 class="col-md-2 "> {{ rating_form.QL1_3_loa }}</h4>
-            <div class="col-md-1 col-md-offset-1 box-yellow">
-                <h4 class="selected-points" id="ql13-selected-points">0</h4>
-            </div>
-            <div class="col-md-1 box-white">
-                <h4 class="possible-points" id="ql13-possible-points">0</h4>
-            </div>
-        <div class="row">
-            <div class="col-md-6">
-                {{ rating_form.QL1_3_exp |attr:"rows:4" }}
-                <br>Count: <span class="current-count" id="span-1">0</span> | Required: <span class="required-count">0</span>
-            </div>
-        </div>
-        </div>
-    </div>
 {#STARTS QL2.3#}
     <div class="container bigbox">
         <div class="version-two-three">
@@ -135,6 +105,37 @@
             </div>
             <div class="col-md-1 box-white">
                 <h4 class="possible-points" id="ql23-possible-points">0</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    {{ rating_form.QL2_3_exp |attr:"rows:4" }}
+                    <br>Count: <span class="current-count" id="span-1">0</span> | Required: <span class="required-count">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+{#STARTS QL2.5#}
+    <div class="container bigbox">
+        <div class="version-two-three">
+            <div class="row">
+                <div class="col-md-12 box-example-ql">
+                    <p><h4>Example: Psomas Engineering achieved <i><b>Restorative.</b></i></h4>The park includes walking and biking paths as well as bike lanes and large sidewalks adjacent to the property. To encourage alternative modes of transportation, only 67 parking stalls were provided, even though the traffic study estimated 170.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h4 class="col-md-1 ql">QL2.5</h4>
+            <p class="col-md-4 textbox"><b>Encourage Alternative Modes of Transportation</b>
+                <br>Improve accessibility to non-motorized transportation and public transit. Promote alternative transportation and reduce congestion.<br>
+                <a href={% static "details/QL2.5/index.html" %} target="_blank">detail/guidance</a>
+            </p>
+            <h4 class="col-md-2"> {{ rating_form.QL2_5_inc }}</h4>
+            <h4 class="col-md-2"> {{ rating_form.QL2_5_loa }}</h4>
+            <div class="col-md-1 col-md-offset-1 box-yellow">
+                <h4 class="selected-points" id="ql25-selected-points">0</h4>
+            </div>
+            <div class="col-md-1 box-white">
+                <h4 class="possible-points" id="ql25-possible-points">0</h4>
             </div>
             <div class="row">
                 <div class="col-md-6">
@@ -244,74 +245,12 @@
             </div>
         </div>
     </div>
-{#NW1.5#}
-    <div class="container bigbox">
-        <div class="version-two-three">
-            <div class="row">
-                <div class="col-md-12 box-example-nw">
-                    <h4>Example: Psomas Engineering achieved <i><b>No Added Value - 0 points.</b></i></h4>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <h4 class="col-md-1 nw">NW1.5</h4>
-            <p class="col-md-4 textbox"><b>Preserve Floodplain Functions</b>
-                <br>Preserve floodplain functions by limiting development and development impacts to maintain water management capacities and capabilities.<br>
-                <a href={% static "details/NW1.5/index.html" %} target="_blank">detail/guidance</a>
-            </p>
-            <h4 class="col-md-2"> {{ rating_form.NW1_5_inc }}</h4>
-            <h4 class="col-md-2"> {{ rating_form.NW1_5_loa }}</h4>
-            <div class="col-md-1 col-md-offset-1 box-yellow">
-                <h4 class="selected-points" id="nw15-selected-points">0</h4>
-            </div>
-            <div class="col-md-1 box-white">
-                <h4 class="possible-points" id="nw15-possible-points">0</h4>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    {{ rating_form.NW1_5_exp |attr:"rows:4" }}
-                    <br>Count: <span class="current-count" id="span-1">0</span> | Required: <span class="required-count">0</span>
-                </div>
-            </div>
-        </div>
-    </div>
-{#NW2.1#}
-    <div class="container bigbox">
-        <div class="version-two-three">
-            <div class="row">
-                <div class="col-md-12 box-example-nw">
-                    <p><h4>Example: Psomas Engineering achieved <i><b>Conserving.</b></i></h4>The project incorporated native California plant species that require no pesticides or fertilizer. Project includes open water, emergent marsh, riparian and upland plants.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <h4 class="col-md-1 nw">NW2.1</h4>
-            <p class="col-md-4 textbox"><b>Manage Stormwater</b>
-                <br>Minimize the impact of infrastructure on stormwater runoff quantity and quality.<br>
-                <a href={% static "details/NW2.1/index.html" %} target="_blank">detail/guidance</a>
-            </p>
-            <h4 class="col-md-2"> {{ rating_form.NW2_1_inc }}</h4>
-            <h4 class="col-md-2"> {{ rating_form.NW2_1_loa }}</h4>
-            <div class="col-md-1 col-md-offset-1 box-yellow">
-                <h4 class="selected-points" id="nw21-selected-points">0</h4>
-            </div>
-            <div class="col-md-1 box-white">
-                <h4 class="possible-points" id="nw21-possible-points">0</h4>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    {{ rating_form.NW2_1_exp |attr:"rows:4" }}
-                    <br>Count: <span class="current-count" id="span-1">0</span> | Required: <span class="required-count">0</span>
-                </div>
-            </div>
-        </div>
-    </div>
 {#NW2.3#}
     <div class="container bigbox">
         <div class="version-two-three">
             <div class="row">
                 <div class="col-md-12 box-example-nw">
-                    <p><h4>Example: Psomas Engineering achieved <i><b>Restorative.</b></i></h4>The project team designed for 100% collection of dry weather runoff from the regional storm drain network. In addition, all wetland cells are lined with a primary geosynthetic clay liner (GCL) to form an impermeable layer that 1) prevents water loss via infiltration and 2) prevents infiltration into the former Brownfield site.</p>
+                    <p><h4>Example: Psomas Engineering achieved <i><b>Restorative.</b></i></h4><p>The project team designed for 100% collection of dry weather runoff from the regional storm drain network. All wetland cells are lined with a primary geosynthetic clay liner to form an impermeable layer that 1) prevents water loss via infiltration and 2) prevents infiltration into the former Brownfield site.</p>
                 </div>
             </div>
         </div>
@@ -342,7 +281,7 @@
         <div class="version-two-three">
             <div class="row">
                 <div class="col-md-12 box-example-nw">
-                    <h4>An example is not available for this credit.</h4>
+                    <h4>Example: Psomas Engineering achieved <i><b>Restorative.</b></i></h4><p>A wetland with riparian and emergent marsh habitat was created at the center of a densely populated urban community. The project is designed to divert stormwater runoff from the adjacent 63” storm drain and use the runoff as a resource to sustain the constructed wetland and its natural habitat.</p>
                 </div>
             </div>
         </div>
@@ -380,7 +319,7 @@
         <div class="version-two-three">
             <div class="row">
                 <div class="col-md-12 box-example-cr">
-                    <h4>An example is not available for this credit.</h4>
+                    <h4>Example: Psomas Engineering achieved <i><b>Restorative.</b></i></h4><p>The project team converted the land use designation of the site from Light Industrial to Open Space. According to the project’s Environmental Impact Report (EIR), green house gas (GHG) emissions would be reduced following implementation of the South Los Angeles Wetland Park.</p>
                 </div>
             </div>
         </div>

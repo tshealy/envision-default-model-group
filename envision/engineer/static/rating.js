@@ -41,7 +41,6 @@ $(function() {
         $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
     };
 
-
     //character count for textarea
 
     $("textarea").keyup(function(){
@@ -80,11 +79,11 @@ $(function() {
         var points = getLastValue( $("#id_QL1_2_loa"));
         writePossiblePoints( $("#ql12-possible-points"), points);
 
-        var points = getLastValue( $("#id_QL1_3_loa"));
-        writePossiblePoints( $("#ql13-possible-points"), points);
-
         var points = getLastValue( $("#id_QL2_3_loa"));
         writePossiblePoints( $("#ql23-possible-points"), points);
+
+        var points = getLastValue( $("#id_QL2_5_loa"));
+        writePossiblePoints( $("#ql25-possible-points"), points);
 
         var points = getLastValue( $("#id_QL3_2_loa"));
         writePossiblePoints( $("#ql32-possible-points"), points);
@@ -94,12 +93,6 @@ $(function() {
 
         var points = getLastValue( $("#id_NW1_2_loa"));
         writePossiblePoints( $("#nw12-possible-points"), points);
-
-        var points = getLastValue( $("#id_NW1_5_loa"));
-        writePossiblePoints( $("#nw15-possible-points"), points);
-
-        var points = getLastValue( $("#id_NW2_1_loa"));
-        writePossiblePoints( $("#nw21-possible-points"), points);
 
         var points = getLastValue( $("#id_NW2_3_loa"));
         writePossiblePoints( $("#nw23-possible-points"), points);
@@ -122,40 +115,84 @@ $(function() {
             $("#id_QL1_2_loa").val('13').ready(function() {
                 $("#ql12-selected-points").text($("#id_QL1_2_loa :selected").val());
             });
-        }
+        };
         $("#id_QL1_2_loa").change(function() {
             $("#ql12-selected-points").text($("#id_QL1_2_loa :selected").val());
         });
-        $("#id_QL1_3_loa").change(function() {
-            $("#ql13-selected-points").text($("#id_QL1_3_loa :selected").val());
-        });
+         if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
+            $("#id_QL2_3_loa").val('8').ready(function() {
+                $("#ql23-selected-points").text($("#id_QL2_3_loa :selected").val());
+            });
+        };
         $("#id_QL2_3_loa").change(function() {
             $("#ql23-selected-points").text($("#id_QL2_3_loa :selected").val());
         });
+         if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
+            $("#id_QL2_5_loa").val('12').ready(function() {
+                $("#ql25-selected-points").text($("#id_QL2_5_loa :selected").val());
+            });
+        };
+        $("#id_QL2_5_loa").change(function() {
+            $("#ql25-selected-points").text($("#id_QL2_5_loa :selected").val());
+        });
+         if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
+            $("#id_QL3_2_loa").val('11').ready(function() {
+                $("#ql32-selected-points").text($("#id_QL3_2_loa :selected").val());
+            });
+        };
+        if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
+            $("#id_QL3_2_loa").val('11').ready(function() {
+                $("#ql32-selected-points").text($("#id_QL3_2_loa :selected").val());
+            });
+        };
         $("#id_QL3_2_loa").change(function() {
             $("#ql32-selected-points").text($("#id_QL3_2_loa :selected").val());
         });
+        if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
+            $("#id_QL3_3_loa").val('11').ready(function() {
+                $("#ql33-selected-points").text($("#id_QL3_3_loa :selected").val());
+            });
+        };
         $("#id_QL3_3_loa").change(function() {
             $("#ql33-selected-points").text($("#id_QL3_3_loa :selected").val());
         });
+        if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
+            $("#id_NW1_2_loa").val('14').ready(function() {
+                $("#nw12-selected-points").text($("#id_NW1_2_loa :selected").val());
+            });
+        };
         $("#id_NW1_2_loa").change(function() {
             $("#nw12-selected-points").text($("#id_NW1_2_loa :selected").val());
         });
-        $("#id_NW1_5_loa").change(function() {
-            $("#nw15-selected-points").text($("#id_NW1_5_loa :selected").val());
-        });
-        $("#id_NW2_1_loa").change(function() {
-            $("#nw21-selected-points").text($("#id_NW2_1_loa :selected").val());
-        });
+        if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
+            $("#id_NW2_3_loa").val('14').ready(function() {
+                $("#nw23-selected-points").text($("#id_NW2_3_loa :selected").val());
+            });
+        };
         $("#id_NW2_3_loa").change(function() {
             $("#nw23-selected-points").text($("#id_NW2_3_loa :selected").val());
         });
+        if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
+            $("#id_NW3_4_loa").val('15').ready(function() {
+                $("#nw34-selected-points").text($("#id_NW3_4_loa :selected").val());
+            });
+        };
         $("#id_NW3_4_loa").change(function() {
             $("#nw34-selected-points").text($("#id_NW3_4_loa :selected").val());
         });
+        if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
+            $("#id_CR1_1_loa").val('18').ready(function() {
+                $("#cr11-selected-points").text($("#id_CR1_1_loa :selected").val());
+            });
+        };
         $("#id_CR1_1_loa").change(function() {
             $("#cr11-selected-points").text($("#id_CR1_1_loa :selected").val());
         });
+        if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
+            $("#id_CR2_2_loa").val('16').ready(function() {
+                $("#cr22-selected-points").text($("#id_CR2_2_loa :selected").val());
+            });
+        };
         $("#id_CR2_2_loa").change(function() {
             $("#cr22-selected-points").text($("#id_CR2_2_loa :selected").val());
         });
@@ -179,19 +216,9 @@ $(function() {
                    })
                }
                else {
-                   writePossiblePoints( $("#ql13-possible-points"), getLastValue($("#id_QL1_3_loa")) );
-                   $("#ql13-selected-points").text($("#id_QL1_3_loa :selected").val());
+                   writePossiblePoints( $("#ql12-possible-points"), getLastValue($("#id_QL1_2_loa")) );
+                   $("#ql12-selected-points").text($("#id_QL1_2_loa :selected").val());
                };
-           };
-        });
-         $("#id_QL1_3_inc").change(function(){
-           if ($("#id_QL1_3_inc :selected").val() == 1) {
-               $("#id_QL1_3_loa").val(0);
-               writePossiblePoints( $("#ql13-selected-points"), 0 );
-               writePossiblePoints( $("#ql13-possible-points"), 0 );
-           } else {
-               writePossiblePoints( $("#ql13-possible-points"), getLastValue($("#id_QL1_3_loa")) );
-               $("#ql13-selected-points").text($("#id_QL1_3_loa :selected").val());
            };
         });
          $("#id_QL2_3_inc").change(function(){
@@ -200,8 +227,36 @@ $(function() {
                writePossiblePoints( $("#ql23-selected-points"), 0 );
                writePossiblePoints( $("#ql23-possible-points"), 0 );
            } else {
-               writePossiblePoints( $("#ql23-possible-points"), getLastValue($("#id_QL2_3_loa")) );
-               $("#ql23-selected-points").text($("#id_QL2_3_loa :selected").val());
+               if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
+                   writePossiblePoints($("#ql23-possible-points"), getLastValue($("#id_QL2_3_loa")));
+                   $("#id_QL2_3_loa").val('8').ready(function () {
+                       $("#ql23-selected-points").text($("#id_QL2_3_loa :selected").val());
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                   })
+               }
+               else {
+                   writePossiblePoints( $("#ql23-possible-points"), getLastValue($("#id_QL2_3_loa")) );
+                   $("#ql23-selected-points").text($("#id_QL2_3_loa :selected").val());
+               };
+           };
+        });
+        $("#id_QL2_5_inc").change(function(){
+           if ($("#id_QL2_5_inc :selected").val() == 1) {
+               $("#id_QL2_5_loa").val(0);
+               writePossiblePoints( $("#ql25-selected-points"), 0 );
+               writePossiblePoints( $("#ql25-possible-points"), 0 );
+           } else {
+               if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
+                   writePossiblePoints($("#ql25-possible-points"), getLastValue($("#id_QL2_5_loa")));
+                   $("#id_QL2_5_loa").val('12').ready(function () {
+                       $("#ql25-selected-points").text($("#id_QL2_5_loa :selected").val());
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                   })
+               }
+               else {
+                   writePossiblePoints( $("#ql25-possible-points"), getLastValue($("#id_QL2_5_loa")) );
+                   $("#ql25-selected-points").text($("#id_QL2_5_loa :selected").val());
+               };
            };
         });
          $("#id_QL3_2_inc").change(function(){
@@ -210,8 +265,17 @@ $(function() {
                writePossiblePoints( $("#ql32-selected-points"), 0 );
                writePossiblePoints( $("#ql32-possible-points"), 0 );
            } else {
-               writePossiblePoints( $("#ql32-possible-points"), getLastValue($("#id_QL3_2_loa")) );
-               $("#ql32-selected-points").text($("#id_QL3_2_loa :selected").val());
+               if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
+                   writePossiblePoints($("#ql32-possible-points"), getLastValue($("#id_QL3_2_loa")));
+                   $("#id_QL3_2_loa").val('11').ready(function () {
+                       $("#ql32-selected-points").text($("#id_QL3_2_loa :selected").val());
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                   })
+               }
+               else {
+                   writePossiblePoints( $("#ql32-possible-points"), getLastValue($("#id_QL3_2_loa")) );
+                   $("#ql32-selected-points").text($("#id_QL3_2_loa :selected").val());
+               };
            };
         });
          $("#id_QL3_3_inc").change(function(){
@@ -220,8 +284,17 @@ $(function() {
                writePossiblePoints( $("#ql33-selected-points"), 0 );
                writePossiblePoints( $("#ql33-possible-points"), 0 );
            } else {
-               writePossiblePoints( $("#ql33-possible-points"), getLastValue($("#id_QL3_3_loa")) );
-               $("#ql33-selected-points").text($("#id_QL3_3_loa :selected").val());
+               if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
+                   writePossiblePoints($("#ql33-possible-points"), getLastValue($("#id_QL3_3_loa")));
+                   $("#id_QL3_3_loa").val('14').ready(function () {
+                       $("#ql33-selected-points").text($("#id_QL3_3_loa :selected").val());
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                   })
+               }
+               else {
+                   writePossiblePoints( $("#ql33-possible-points"), getLastValue($("#id_QL3_3_loa")) );
+                   $("#ql33-selected-points").text($("#id_QL3_3_loa :selected").val());
+               };
            };
         });
          $("#id_NW1_2_inc").change(function(){
@@ -230,28 +303,17 @@ $(function() {
                writePossiblePoints( $("#nw12-selected-points"), 0 );
                writePossiblePoints( $("#nw12-possible-points"), 0 );
            } else {
-               writePossiblePoints( $("#nw12-possible-points"), getLastValue($("#id_NW1_2_loa")) );
-               $("#nw12-selected-points").text($("#id_NW1_2_loa :selected").val());
-           };
-        });
-         $("#id_NW1_5_inc").change(function(){
-           if ($("#id_NW1_5_inc :selected").val() == 1) {
-               $("#id_NW1_5_loa").val(0);
-               writePossiblePoints( $("#nw15-selected-points"), 0 );
-               writePossiblePoints( $("#nw15-possible-points"), 0 );
-           } else {
-               writePossiblePoints( $("#nw15-possible-points"), getLastValue($("#id_NW1_5_loa")) );
-               $("#nw15-selected-points").text($("#id_NW1_5_loa :selected").val());
-           };
-        });
-         $("#id_NW2_1_inc").change(function(){
-           if ($("#id_NW2_1_inc :selected").val() == 1) {
-               $("#id_NW2_1_loa").val(0);
-               writePossiblePoints( $("#nw21-selected-points"), 0 );
-               writePossiblePoints( $("#nw21-possible-points"), 0 );
-           } else {
-               writePossiblePoints( $("#nw21-possible-points"), getLastValue($("#id_NW2_1_loa")) );
-               $("#nw21-selected-points").text($("#id_NW2_1_loa :selected").val());
+               if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
+                   writePossiblePoints($("#nw12-possible-points"), getLastValue($("#id_NW1_2_loa")));
+                   $("#id_NW1_2_loa").val('14').ready(function () {
+                       $("#nw12-selected-points").text($("#id_NW1_2_loa :selected").val());
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                   })
+               }
+               else {
+                   writePossiblePoints( $("#nw12-possible-points"), getLastValue($("#id_NW1_2_loa")) );
+                   $("#nw12-selected-points").text($("#id_NW1_2_loa :selected").val());
+               };
            };
         });
          $("#id_NW2_3_inc").change(function(){
@@ -260,8 +322,17 @@ $(function() {
                writePossiblePoints( $("#nw23-selected-points"), 0 );
                writePossiblePoints( $("#nw23-possible-points"), 0 );
            } else {
-               writePossiblePoints( $("#nw22-possible-points"), getLastValue($("#id_NW2_3_loa")) );
-               $("#nw23-selected-points").text($("#id_NW2_3_loa :selected").val());
+               if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
+                   writePossiblePoints($("#nw23-possible-points"), getLastValue($("#id_NW2_3_loa")));
+                   $("#id_NW2_3_loa").val('14').ready(function () {
+                       $("#nw23-selected-points").text($("#id_NW2_3_loa :selected").val());
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                   })
+               }
+               else {
+                   writePossiblePoints( $("#nw23-possible-points"), getLastValue($("#id_NW2_3_loa")) );
+                   $("#nw23-selected-points").text($("#id_NW2_3_loa :selected").val());
+               };
            };
         });
          $("#id_NW3_4_inc").change(function(){
@@ -270,8 +341,17 @@ $(function() {
                writePossiblePoints( $("#nw34-selected-points"), 0 );
                writePossiblePoints( $("#nw34-possible-points"), 0 );
            } else {
-               writePossiblePoints( $("#nw34-possible-points"), getLastValue($("#id_NW3_4_loa")) );
-               $("#nw34-selected-points").text($("#id_NW3_4_loa :selected").val());
+               if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
+                   writePossiblePoints($("#nw34-possible-points"), getLastValue($("#id_NW3_4_loa")));
+                   $("#id_NW3_4_loa").val('15').ready(function () {
+                       $("#nw34-selected-points").text($("#id_NW3_4_loa :selected").val());
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                   })
+               }
+               else {
+                   writePossiblePoints( $("#nw34-possible-points"), getLastValue($("#id_NW3_4_loa")) );
+                   $("#nw34-selected-points").text($("#id_NW3_4_loa :selected").val());
+               };
            };
         });
          $("#id_CR1_1_inc").change(function(){
@@ -280,8 +360,17 @@ $(function() {
                writePossiblePoints( $("#cr11-selected-points"), 0 );
                writePossiblePoints( $("#cr11-possible-points"), 0 );
            } else {
-               writePossiblePoints( $("#cr11-possible-points"), getLastValue($("#id_CR1_1_loa")) );
-               $("#cr11-selected-points").text($("#id_CR1_1_loa :selected").val());
+               if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
+                   writePossiblePoints($("#cr11-possible-points"), getLastValue($("#id_CR1_1_loa")));
+                   $("#id_CR1_1_loa").val('18').ready(function () {
+                       $("#cr11-selected-points").text($("#id_CR1_1_loa :selected").val());
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                   })
+               }
+               else {
+                   writePossiblePoints( $("#cr11-possible-points"), getLastValue($("#id_CR1_1_loa")) );
+                   $("#cr11-selected-points").text($("#id_CR1_1_loa :selected").val());
+               };
            };
         });
          $("#id_CR2_2_inc").change(function(){
@@ -290,8 +379,17 @@ $(function() {
                writePossiblePoints( $("#cr22-selected-points"), 0 );
                writePossiblePoints( $("#cr22-possible-points"), 0 );
            } else {
-               writePossiblePoints( $("#cr22-possible-points"), getLastValue($("#id_CR2_2_loa")) );
-               $("#cr22-selected-points").text($("#id_CR2_2_loa :selected").val());
+               if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
+                   writePossiblePoints($("#cr22-possible-points"), getLastValue($("#id_CR2_2_loa")));
+                   $("#id_CR2_2_loa").val('16').ready(function () {
+                       $("#cr22-selected-points").text($("#id_CR2_2_loa :selected").val());
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                   })
+               }
+               else {
+                   writePossiblePoints( $("#cr22-possible-points"), getLastValue($("#id_CR2_2_loa")) );
+                   $("#cr22-selected-points").text($("#id_CR2_2_loa :selected").val());
+               };
            };
         });
     };

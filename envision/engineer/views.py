@@ -46,11 +46,11 @@ def display_engineer(request, pk):
             rating = rating_form.save(commit=False)
             rating.engineer = engineer
             rating.save()
-            if engineer.version == 0:
+            if engineer.version == 1:
                 return redirect('https://www.surveymonkey.com/r/envision_training')
-            elif engineer.version == 1:
-                return redirect('https://www.surveymonkey.com/r/envision_model')
             elif engineer.version == 2:
+                return redirect('https://www.surveymonkey.com/r/envision_model')
+            elif engineer.version == 3:
                 return redirect('https://www.surveymonkey.com/r/envision_model')
     return render(request, "engineer/rating_form.html", {'rating_form': rating_form, "engineer": engineer,})
 
@@ -61,13 +61,11 @@ class RatingCreate(CreateView):
 
     model = Rating
     fields = ['QL1_2_inc', 'QL1_2_loa', 'QL1_2_exp',
-            'QL1_3_inc', 'QL1_3_loa', 'QL1_3_exp',
             'QL2_3_inc', 'QL2_3_loa', 'QL2_3_exp',
+            'QL2_5_inc', 'QL2_5_loa', 'QL2_5_exp',
             'QL3_2_inc', 'QL3_2_loa', 'QL3_2_exp',
             'QL3_3_inc', 'QL3_3_loa', 'QL3_3_exp',
             'NW1_2_inc', 'NW1_2_loa', 'NW1_2_exp',
-            'NW1_5_inc', 'NW1_5_loa', 'NW1_5_exp',
-            'NW2_1_inc', 'NW2_1_loa', 'NW2_1_exp',
             'NW2_3_inc', 'NW2_3_loa', 'NW2_3_exp',
             'NW3_4_inc', 'NW3_4_loa', 'NW3_4_exp',
             'CR1_1_inc', 'CR1_1_loa', 'CR1_1_exp',
