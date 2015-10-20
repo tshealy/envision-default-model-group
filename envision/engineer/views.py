@@ -47,11 +47,11 @@ def display_engineer(request, pk):
             rating.engineer = engineer
             rating.save()
             if engineer.version == 1:
-                return redirect('https://www.surveymonkey.com/r/envision_training')
+                return redirect('https://www.surveymonkey.com/r/envisionfollowup')
             elif engineer.version == 2:
-                return redirect('https://www.surveymonkey.com/r/envision_model')
+                return redirect('https://www.surveymonkey.com/r/envfollowup')
             elif engineer.version == 3:
-                return redirect('https://www.surveymonkey.com/r/envision_model')
+                return redirect('https://www.surveymonkey.com/r/isifollowup')
     return render(request, "engineer/rating_form.html", {'rating_form': rating_form, "engineer": engineer,})
 
 
