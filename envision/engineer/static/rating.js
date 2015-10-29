@@ -433,7 +433,6 @@ $(function() {
 
     if (parseInt($(".data").html()) === 3){
         $(".version-two-three").show();
-        $(".disclosure-bottom-box").show();
     };
 
     $("#id_total_time").hide();
