@@ -38,7 +38,7 @@ $(function() {
 
     //Default setting required count to 250
     if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
-        $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+        $("select").parent().siblings(".row").find(".required-count").text(charCounts['Restorative']);
     };
 
     //character count for textarea
@@ -112,7 +112,7 @@ $(function() {
         // dropdown
         // h4 id  ----------------------- dropdown + :selected
         if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
-            $("#id_QL1_2_loa").val('13').ready(function() {
+            $("#id_QL1_2_loa").val('16').ready(function() {
                 $("#ql12-selected-points").text($("#id_QL1_2_loa :selected").val());
             });
         };
@@ -120,7 +120,7 @@ $(function() {
             $("#ql12-selected-points").text($("#id_QL1_2_loa :selected").val());
         });
          if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
-            $("#id_QL2_3_loa").val('8').ready(function() {
+            $("#id_QL2_3_loa").val('11').ready(function() {
                 $("#ql23-selected-points").text($("#id_QL2_3_loa :selected").val());
             });
         };
@@ -128,20 +128,16 @@ $(function() {
             $("#ql23-selected-points").text($("#id_QL2_3_loa :selected").val());
         });
          if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
-            $("#id_QL2_5_loa").val('12').ready(function() {
+            $("#id_QL2_5_loa").val('15').ready(function() {
                 $("#ql25-selected-points").text($("#id_QL2_5_loa :selected").val());
             });
         };
         $("#id_QL2_5_loa").change(function() {
             $("#ql25-selected-points").text($("#id_QL2_5_loa :selected").val());
         });
-         if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
-            $("#id_QL3_2_loa").val('11').ready(function() {
-                $("#ql32-selected-points").text($("#id_QL3_2_loa :selected").val());
-            });
-        };
+
         if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
-            $("#id_QL3_2_loa").val('11').ready(function() {
+            $("#id_QL3_2_loa").val('14').ready(function() {
                 $("#ql32-selected-points").text($("#id_QL3_2_loa :selected").val());
             });
         };
@@ -149,7 +145,7 @@ $(function() {
             $("#ql32-selected-points").text($("#id_QL3_2_loa :selected").val());
         });
         if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
-            $("#id_QL3_3_loa").val('11').ready(function() {
+            $("#id_QL3_3_loa").val('13').ready(function() {
                 $("#ql33-selected-points").text($("#id_QL3_3_loa :selected").val());
             });
         };
@@ -157,7 +153,7 @@ $(function() {
             $("#ql33-selected-points").text($("#id_QL3_3_loa :selected").val());
         });
         if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
-            $("#id_NW1_2_loa").val('14').ready(function() {
+            $("#id_NW1_2_loa").val('18').ready(function() {
                 $("#nw12-selected-points").text($("#id_NW1_2_loa :selected").val());
             });
         };
@@ -165,7 +161,7 @@ $(function() {
             $("#nw12-selected-points").text($("#id_NW1_2_loa :selected").val());
         });
         if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
-            $("#id_NW2_3_loa").val('14').ready(function() {
+            $("#id_NW2_3_loa").val('18').ready(function() {
                 $("#nw23-selected-points").text($("#id_NW2_3_loa :selected").val());
             });
         };
@@ -173,7 +169,7 @@ $(function() {
             $("#nw23-selected-points").text($("#id_NW2_3_loa :selected").val());
         });
         if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
-            $("#id_NW3_4_loa").val('15').ready(function() {
+            $("#id_NW3_4_loa").val('19').ready(function() {
                 $("#nw34-selected-points").text($("#id_NW3_4_loa :selected").val());
             });
         };
@@ -181,7 +177,7 @@ $(function() {
             $("#nw34-selected-points").text($("#id_NW3_4_loa :selected").val());
         });
         if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
-            $("#id_CR1_1_loa").val('18').ready(function() {
+            $("#id_CR1_1_loa").val('25').ready(function() {
                 $("#cr11-selected-points").text($("#id_CR1_1_loa :selected").val());
             });
         };
@@ -189,7 +185,7 @@ $(function() {
             $("#cr11-selected-points").text($("#id_CR1_1_loa :selected").val());
         });
         if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3){
-            $("#id_CR2_2_loa").val('16').ready(function() {
+            $("#id_CR2_2_loa").val('20').ready(function() {
                 $("#cr22-selected-points").text($("#id_CR2_2_loa :selected").val());
             });
         };
@@ -210,9 +206,9 @@ $(function() {
            else {
                if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
                    writePossiblePoints($("#ql12-possible-points"), getLastValue($("#id_QL1_2_loa")));
-                   $("#id_QL1_2_loa").val('13').ready(function () {
+                   $("#id_QL1_2_loa").val('16').ready(function () {
                        $("#ql12-selected-points").text($("#id_QL1_2_loa :selected").val());
-                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Restorative']);
                    })
                }
                else {
@@ -229,9 +225,9 @@ $(function() {
            } else {
                if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
                    writePossiblePoints($("#ql23-possible-points"), getLastValue($("#id_QL2_3_loa")));
-                   $("#id_QL2_3_loa").val('8').ready(function () {
+                   $("#id_QL2_3_loa").val('11').ready(function () {
                        $("#ql23-selected-points").text($("#id_QL2_3_loa :selected").val());
-                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Restorative']);
                    })
                }
                else {
@@ -248,9 +244,9 @@ $(function() {
            } else {
                if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
                    writePossiblePoints($("#ql25-possible-points"), getLastValue($("#id_QL2_5_loa")));
-                   $("#id_QL2_5_loa").val('12').ready(function () {
+                   $("#id_QL2_5_loa").val('15').ready(function () {
                        $("#ql25-selected-points").text($("#id_QL2_5_loa :selected").val());
-                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Restorative']);
                    })
                }
                else {
@@ -267,9 +263,9 @@ $(function() {
            } else {
                if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
                    writePossiblePoints($("#ql32-possible-points"), getLastValue($("#id_QL3_2_loa")));
-                   $("#id_QL3_2_loa").val('11').ready(function () {
+                   $("#id_QL3_2_loa").val('14').ready(function () {
                        $("#ql32-selected-points").text($("#id_QL3_2_loa :selected").val());
-                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Restorative']);
                    })
                }
                else {
@@ -286,9 +282,9 @@ $(function() {
            } else {
                if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
                    writePossiblePoints($("#ql33-possible-points"), getLastValue($("#id_QL3_3_loa")));
-                   $("#id_QL3_3_loa").val('14').ready(function () {
+                   $("#id_QL3_3_loa").val('18').ready(function () {
                        $("#ql33-selected-points").text($("#id_QL3_3_loa :selected").val());
-                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Restorative']);
                    })
                }
                else {
@@ -305,9 +301,9 @@ $(function() {
            } else {
                if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
                    writePossiblePoints($("#nw12-possible-points"), getLastValue($("#id_NW1_2_loa")));
-                   $("#id_NW1_2_loa").val('14').ready(function () {
+                   $("#id_NW1_2_loa").val('18').ready(function () {
                        $("#nw12-selected-points").text($("#id_NW1_2_loa :selected").val());
-                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Restorative']);
                    })
                }
                else {
@@ -324,9 +320,9 @@ $(function() {
            } else {
                if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
                    writePossiblePoints($("#nw23-possible-points"), getLastValue($("#id_NW2_3_loa")));
-                   $("#id_NW2_3_loa").val('14').ready(function () {
+                   $("#id_NW2_3_loa").val('18').ready(function () {
                        $("#nw23-selected-points").text($("#id_NW2_3_loa :selected").val());
-                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Restorative']);
                    })
                }
                else {
@@ -343,9 +339,9 @@ $(function() {
            } else {
                if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
                    writePossiblePoints($("#nw34-possible-points"), getLastValue($("#id_NW3_4_loa")));
-                   $("#id_NW3_4_loa").val('15').ready(function () {
+                   $("#id_NW3_4_loa").val('19').ready(function () {
                        $("#nw34-selected-points").text($("#id_NW3_4_loa :selected").val());
-                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Restorative']);
                    })
                }
                else {
@@ -362,9 +358,9 @@ $(function() {
            } else {
                if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
                    writePossiblePoints($("#cr11-possible-points"), getLastValue($("#id_CR1_1_loa")));
-                   $("#id_CR1_1_loa").val('18').ready(function () {
+                   $("#id_CR1_1_loa").val('25').ready(function () {
                        $("#cr11-selected-points").text($("#id_CR1_1_loa :selected").val());
-                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Restorative']);
                    })
                }
                else {
@@ -381,9 +377,9 @@ $(function() {
            } else {
                if (parseInt($(".data").html()) === 2 || parseInt($(".data").html()) === 3) {
                    writePossiblePoints($("#cr22-possible-points"), getLastValue($("#id_CR2_2_loa")));
-                   $("#id_CR2_2_loa").val('16').ready(function () {
+                   $("#id_CR2_2_loa").val('20').ready(function () {
                        $("#cr22-selected-points").text($("#id_CR2_2_loa :selected").val());
-                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Conserving']);
+                       $("select").parent().siblings(".row").find(".required-count").text(charCounts['Restorative']);
                    })
                }
                else {
