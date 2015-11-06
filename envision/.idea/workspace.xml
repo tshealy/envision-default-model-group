@@ -70,8 +70,8 @@
       <file leaf-file-name="engineer_form.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/engineer/templates/engineer/engineer_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3739968">
-              <caret line="40" column="107" selection-start-line="40" selection-start-column="107" selection-end-line="40" selection-end-column="107" />
+            <state vertical-scroll-proportion="0.3258427">
+              <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -942,8 +942,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/engineer/templates/engineer/engineer_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3739968">
-          <caret line="40" column="107" selection-start-line="40" selection-start-column="107" selection-end-line="40" selection-end-column="107" />
+        <state vertical-scroll-proportion="0.3258427">
+          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
           <folding />
         </state>
       </provider>
