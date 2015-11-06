@@ -13,7 +13,7 @@ from .forms import RatingForm, EngineerForm
 
 class EngineerCreate(CreateView):
     model = Engineer
-    fields = ['name']
+    fields = ['name', 'research']
     # success_url = '/ratings/'
 
     def get_success_url(self):

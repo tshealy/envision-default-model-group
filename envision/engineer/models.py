@@ -14,8 +14,16 @@ class Engineer(models.Model):
 
     version = models.IntegerField(null=True)
 
+    no_yes = (
+        (0, "No"),
+        (1, "Yes")
+    )
+
+    research = models.IntegerField(choices=no_yes, default=1)
+
+
     def __str__(self):
-        return "{}, version: {}".format(self.name, self.version)
+        return "{}, version: {}, research: {}".format(self.name, self.version, self.research)
 
     # total_time = models.IntegerField(default=0)
 
