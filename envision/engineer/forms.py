@@ -7,10 +7,11 @@ from .models import Engineer, Rating
 class EngineerForm(forms.ModelForm):
     name = forms.CharField()
     version = forms.CharField()
+    research = forms.IntegerField
 
     class Meta:
         model = Engineer
-        fields = ('name', 'version',)
+        fields = ('name', 'version', 'research')
 
 
 class RatingForm(forms.ModelForm):

@@ -35,7 +35,12 @@
         <p>The city of Cordova, AL hired your firm to transform a dilapidated, under-used park and brownfield site into a community walking and outdoor gathering center.  Your job is to ensure the design meets Envision certification. Because the project is in the early design stages, you are in charge of many project decisions. For example, is reducing light pollution of value? What about community walkability?</p>
         <form method="POST" action="{% url 'engineer_add' %}">
             {% csrf_token %}
-            {{ form.as_p }}
+            <h3>Name: {{ form.name }}</h3>
+            <p>Can we include your results in a research study? {{ form.research }} </p>
+            <div>
+                <a href={% static "details/irb/index.html" %} target="_blank">Research details are provided here.</a>
+            </div>
+            <p></p>
             <input type="submit" value="Get Started!" class = "btn btn-info" />
         </form>
       </div>
