@@ -3,7 +3,7 @@ from .models import Engineer, Rating
 
 
 class EngineerAdmin(admin.ModelAdmin):
-    list_display = ['name', 'group_member_1','group_member_2', 'group_member_3', 'version', 'research']
+    list_display = ['name', 'version', 'research']
 
 
 class RatingAdmin(admin.ModelAdmin):

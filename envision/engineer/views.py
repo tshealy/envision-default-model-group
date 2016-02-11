@@ -13,7 +13,7 @@ from .forms import RatingForm, EngineerForm
 
 class EngineerCreate(CreateView):
     model = Engineer
-    fields = ['name', 'group_member_1','group_member_2', 'group_member_3', 'research']
+    fields = ['name', 'research']
     # success_url = '/ratings/'
 
     def get_success_url(self):
@@ -44,9 +44,9 @@ def display_engineer(request, pk):
             rating.engineer = engineer
             rating.save()
             if engineer.version == 0:
-                return redirect('https://www.surveymonkey.com/r/envision_training')
+                return redirect('https://www.surveymonkey.com/r/envision-teams')
             elif engineer.version == 1:
-                return redirect('https://www.surveymonkey.com/r/envision_model')
+                return redirect('https://www.surveymonkey.com/r/envision-groups')
 
     return render(request, "engineer/rating_form.html", {'rating_form': rating_form, "engineer": engineer,})
 
