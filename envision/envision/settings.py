@@ -87,7 +87,7 @@ DATABASES = {
     },
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'envision-default-model',
+        'NAME': 'envision-default-model-group',
         'USER': 'tripp',
         'PASSWORD': '',
         'HOST': '127.0.0.1',

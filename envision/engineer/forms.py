@@ -6,12 +6,15 @@ from .models import Engineer, Rating
 
 class EngineerForm(forms.ModelForm):
     name = forms.CharField()
+    group_member_1 = forms.CharField()
+    group_member_2 = forms.CharField()
+    group_member_3 = forms.CharField()
     version = forms.CharField()
     research = forms.IntegerField
 
     class Meta:
         model = Engineer
-        fields = ('name', 'version', 'research')
+        fields = ('name', 'group_member_1', 'group_member_2', 'group_member_3', 'version', 'research')
 
 
 class RatingForm(forms.ModelForm):

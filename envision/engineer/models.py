@@ -12,6 +12,12 @@ class Engineer(models.Model):
 
     name = models.CharField(max_length=255)
 
+    group_member_1 = models.CharField(max_length=255)
+
+    group_member_2 = models.CharField(max_length=255)
+
+    group_member_3 = models.CharField(max_length=255)
+
     version = models.IntegerField(null=True)
 
     no_yes = (
@@ -23,7 +29,9 @@ class Engineer(models.Model):
 
 
     def __str__(self):
-        return "{}, version: {}, research: {}".format(self.name, self.version, self.research)
+        return "{}, {}, {}, {}, version: {}, research: {}".format(self.name, self.group_member_1,
+                                                                  self.group_member_2, self.group_member_3,
+                                                                  self.version, self.research)
 
     # total_time = models.IntegerField(default=0)
 

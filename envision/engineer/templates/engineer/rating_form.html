@@ -28,23 +28,15 @@
         </ul>
     </div>
 </head>
-<body>
-<div class="disclosure-top-box">
-    <h4>In order to encourage higher Envision scores, we modified your interface with the Envision rating system in two ways:</h4>
-        <ol>
-            <li>We added the high-scoring example project (typically there is no example project on the standard interface).</li>
-            <li>We pre-set your point scores to the conserving level of achievement (typically there is no pre-set).</li>
-        </ol>
-</div>
-{#BELOW CHANGES BASED ON VERSION 0/1/2#}
-<div class = "version-two-three south-box">
+{#BELOW CHANGES BASED ON VERSION 0/1#}
+<div class = "version-one south-box">
     <h3 id="title">An example project: South LA Wetlands</h3>
     <div>
         <img id="south_la_park" src={% static "images/south_la_park.jpg" %} />
         <p id="image-description">Here is an example project to help with your assessment. The South Los Angeles Wetland Park is a nature park and sustainable stormwater treatment wetland constructed on a former Brownfield site in Los Angeles, CA. Both the previous site and end result are similar to what is possible in Cordova, AL. Included below are examples to explain how the South LA team achieved a platinum rating.</p>
     </div>
 </div>
-{#ABOVE CHANGES BASED ON VERSION 0/1/2#}
+{#ABOVE CHANGES BASED ON VERSION 0/1#}
 <form id="happy-form" class="navbar-form navbar-center" method="POST" action="{% url 'engineer_detail' engineer.pk %}">
     {% csrf_token %}
     <div class = "headerbox">
@@ -54,7 +46,7 @@
     </div>
 {#STARTS QL1.2#}
     <div class="container bigbox">
-        <div class="version-two-three">
+        <div class="version-one">
             <div class="row">
                 <div class="col-md-12 box-example-ql">
                     <p><h4>Example: South LA Wetlands achieved <i><b>Restorative.</b></i></h4>The project team transformed the blighted maintenance yard into a landscaped open space for the community. This improved community attractiveness provided a recreational facility to enhance the overall community.</p>
@@ -85,7 +77,7 @@
     </div>
 {#STARTS QL2.3#}
     <div class="container bigbox">
-        <div class="version-two-three">
+        <div class="version-one">
             <div class="row">
                 <div class="col-md-12 box-example-ql">
                     <p><h4>Example: South LA Wetlands achieved <i><b>Restorative.</b></i></h4>The project team conducted an assessment of lighting needs and found only security lighting along the pedestrian walkways was needed. The project uses solar lights with cut-off lenses to reduce both lighting energy requirements and light spillage.</p>
@@ -116,7 +108,7 @@
     </div>
 {#STARTS QL2.5#}
     <div class="container bigbox">
-        <div class="version-two-three">
+        <div class="version-one">
             <div class="row">
                 <div class="col-md-12 box-example-ql">
                     <p><h4>Example: South LA Wetlands achieved <i><b>Restorative.</b></i></h4>The park includes walking and biking paths as well as bike lanes and large sidewalks adjacent to the property. To encourage alternative modes of transportation only 67 parking stalls were provided even though the traffic study estimated 170 were needed.</p>
@@ -147,7 +139,7 @@
     </div>
 {#STARTS QL3.2#}
     <div class="container bigbox">
-        <div class="version-two-three">
+        <div class="version-one">
             <div class="row">
                 <div class="col-md-12 box-example-ql">
                     <p><h4>Example: South LA Wetlands achieved <i><b>Restorative.</b></i></h4>The project restored the overall visual character as it transformed all nine acres of the blight maintenance yard to landscaped public space for the community. Dilapidated buildings were demolished and the views from the neighboring school, church, and surrounding homes improved.</p>
@@ -178,7 +170,7 @@
     </div>
 {#STARTS QL3.3#}
     <div class="container bigbox">
-        <div class="version-two-three">
+        <div class="version-one">
             <div class="row">
                 <div class="col-md-12 box-example-ql">
                     <p><h4>Example: South LA Wetlands achieved <i><b>Restorative.</b></i></h4>The project team developed wetland and riparian habitat, trails, boardwalks, and educational and public use facilities. The site minimizes discharge of pollutants from urban run-off to receiving waters.</p>
@@ -216,7 +208,7 @@
     </div>
 {#NW1.2#}
     <div class="container bigbox">
-        <div class="version-two-three">
+        <div class="version-one">
             <div class="row">
                 <div class="col-md-12 box-example-nw">
                     <p><h4>Example: South LA Wetlands achieved <i><b>Restorative.</b></i></h4>A wetland with riparian and emergent marsh habitat was created at the center of a densely populated urban community. The project team and city changed the land use designation of the site from Light Industrial to Open Space in order to ensure the continued use of the site as a wetland park.</p>
@@ -247,7 +239,7 @@
     </div>
 {#NW2.3#}
     <div class="container bigbox">
-        <div class="version-two-three">
+        <div class="version-one">
             <div class="row">
                 <div class="col-md-12 box-example-nw">
                     <p><h4>Example: South LA Wetlands achieved <i><b>Restorative.</b></i></h4><p>The project team designed for 100% collection of dry weather runoff from the regional storm drain network. All wetland cells are lined with a primary geosynthetic clay liner to form an impermeable layer that 1) prevents water loss via infiltration and 2) prevents infiltration into the former Brownfield site.</p>
@@ -278,7 +270,7 @@
     </div>
 {#NW3.4#}
     <div class="container bigbox">
-        <div class="version-two-three">
+        <div class="version-one">
             <div class="row">
                 <div class="col-md-12 box-example-nw">
                     <h4>Example: South LA Wetlands achieved <i><b>Restorative.</b></i></h4><p>A wetland with riparian and emergent marsh habitat was created at the center of a densely populated urban community. The project is designed to divert stormwater runoff from the adjacent 63” storm drain and use the runoff as a resource to sustain the constructed wetland and its natural habitat.</p>
@@ -316,7 +308,7 @@
     </div>
 {#STARTS CR1.1#}
     <div class="container bigbox">
-        <div class="version-two-three">
+        <div class="version-one">
             <div class="row">
                 <div class="col-md-12 box-example-cr">
                     <h4>Example: South LA Wetlands achieved <i><b>Restorative.</b></i></h4><p>The project team converted the land use designation of the site from Light Industrial to Open Space. According to the project’s Environmental Impact Report (EIR), green house gas (GHG) emissions would be reduced following implementation of the South Los Angeles Wetland Park.</p>
@@ -347,7 +339,7 @@
     </div>
 {#STARTS CR2.2#}
     <div class="container bigbox">
-        <div class="version-two-three">
+        <div class="version-one">
             <div class="row">
                 <div class="col-md-12 box-example-cr">
                     <p><h4>Example: South LA Wetlands achieved <i><b>Restorative.</b></i></h4>Using sluice gates and end caps for orficies, the wetland was broken into three cells allowing them to operate independently. This flexibility provides opportunity to reconfigure the wetland in the event that source water is reduced (i.e. consider converting one of the wetlands to park).</p>
