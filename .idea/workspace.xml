@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c8000415-e8d5-42ed-b69d-d86da5369017" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/envision/envision/heroku_settings.py" afterPath="$PROJECT_DIR$/envision/envision/heroku_settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/envision/envision/settings.py" afterPath="$PROJECT_DIR$/envision/envision/settings.py" />
     </list>
     <ignored path="envision-default-model.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="heroku_settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/envision/envision/heroku_settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44871795">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.5769231">
+              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
               <folding>
                 <element signature="e#27#50#0" expanded="true" />
               </folding>
@@ -650,8 +649,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/envision/envision/heroku_settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44871795">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.5769231">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
           <folding>
             <element signature="e#27#50#0" expanded="true" />
           </folding>
